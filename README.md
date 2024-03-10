@@ -2,7 +2,7 @@
 # Merge Planet
 ## Single player game.
 ## Very addicting.
-# Controls;
+# Controls:
 ## Mouse 
 # Goodluck!
 # Link:
