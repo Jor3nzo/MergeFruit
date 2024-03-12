@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public float spawnSpeed = 1f;
-    public GameObject planetPrefab;
+    public List<GameObject> planetPrefabs;
 
 
     
@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
 
     public void Spawn()
     {
-        var obj = Instantiate(planetPrefab);
+        var obj = Instantiate(planetPrefabs[Random.Range(0, planetPrefabs.Count)]);
         var x = Random.Range(-2f, 2f);
         obj.transform.position = new Vector3(x, 4, 0);
     }

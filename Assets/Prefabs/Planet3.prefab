@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6092766131936731472}
   - component: {fileID: 374234221502553347}
   - component: {fileID: 5435117602758387566}
+  - component: {fileID: -2732736337993327691}
   m_Layer: 0
   m_Name: Planet3
   m_TagString: Untagged
@@ -120,3 +121,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6.4
+--- !u!114 &-2732736337993327691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059607474765529605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efd9ad789a2f6e4aa5501e471537e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetPrefab: {fileID: 8059607474765529605}
+  dropForce: 1
