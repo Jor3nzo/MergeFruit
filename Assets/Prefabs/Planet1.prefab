@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7558018085303052435}
   - component: {fileID: 2600440904592866970}
   - component: {fileID: 1924052247884790958}
+  - component: {fileID: 3406917908948489493}
   m_Layer: 0
   m_Name: Planet1
   m_TagString: Planet
@@ -137,4 +138,31 @@ MonoBehaviour:
   dropForce: 1
   isMerging: 0
   nextPlanet: {fileID: 7324203761252976441, guid: eee8fb935eef7db4ba4e4b602087ed3d, type: 3}
-  Points: 1
+  points: 0
+--- !u!50 &3406917908948489493
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251603411828759572}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

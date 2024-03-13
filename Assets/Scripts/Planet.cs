@@ -12,7 +12,9 @@ public class Planet : MonoBehaviour
     public GameObject nextPlanet;
 
     public int points;
-  
+
+    private string intheCloud = "y";
+
     void Start()
     {
 
@@ -21,15 +23,15 @@ public class Planet : MonoBehaviour
    
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (intheCloud=="y")
         {
-            if (rb == null)
-            {
-                rb = planetPrefab.AddComponent<Rigidbody2D>();
-                rb.AddForce(Vector3.down * dropForce, ForceMode2D.Force);
-            }
+            GetComponent<Transform>().position = Cloud.cloudPos;
+        }
 
-
+        if (Input.GetKeyDown("space"))
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 1;
+            intheCloud = "n";
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
