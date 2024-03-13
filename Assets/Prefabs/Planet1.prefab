@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1924052247884790958}
   m_Layer: 0
   m_Name: Planet1
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,3 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetPrefab: {fileID: 7251603411828759572}
   dropForce: 1
+  isMerging: 0
+  nextPlanet: {fileID: 7324203761252976441, guid: eee8fb935eef7db4ba4e4b602087ed3d, type: 3}
+  Points: 1
