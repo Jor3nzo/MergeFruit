@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
-    Rigidbody2D rb;
+    
     public GameObject planetPrefab;
     public float dropForce = 1f;
     public bool isMerging;
@@ -15,11 +15,6 @@ public class Planet : MonoBehaviour
 
     private string intheCloud = "y";
 
-    void Start()
-    {
-
-
-    }
    
     void Update()
     {
@@ -32,6 +27,7 @@ public class Planet : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().gravityScale = 1;
             intheCloud = "n";
+            Cloud.spawnedYet = "n";
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
